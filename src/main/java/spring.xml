@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+
+<bean id="animal" class="com.diablo.asssgn113.Dog">
+<property name="age" value="12"></property>
+<property name="sound" value="bark"></property>
+<property name="leg" ref="leg"></property>
+</bean>
+<bean id="leg" class="com.diablo.asssgn113.Legs">
+<property name="size" value="15"></property>
+<property name="width" value="56"></property>
+</bean>
+
+</beans>
